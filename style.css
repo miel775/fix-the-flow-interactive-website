@@ -1,0 +1,45 @@
+
+
+.tables {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.tables article {
+    background-color: beige;
+    border: solid #000 2px;
+}
+
+.schaduw {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.halfschaduw {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+}
+
+.zon {
+    width: 50px;
+    height: 50px;
+}
+
+.buttons {
+    display: flex;
+    right: 50%;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+
+.paging button {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    margin: 10px;
+}
