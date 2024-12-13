@@ -3,139 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
+    <title>Stekjes</title>
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://sidopjescherm.github.io/look-and-feel-styleguide/biebinbloei.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Desktop Header -->
+<header class="desktopheader" aria-label="Main navigation">
+        <div class="logo">
+            <img src="assets/Cactus Harry blij.svg" width="100" alt="Harry logo" class="harry">
+        </div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a class="active" href="stekjes.html">de Tuin</a>
+            <a href="agenda.html">Agenda</a>
+            <a href="overons.html">Over Ons</a>
+        </div>
+</header>
 
+<!-- Mobile Header -->
+<header class="mobileheader" aria-label="Mobile navigation">
+    <div class="logo">
+        <img src="assets/Cactus Harry blij.svg" width="100" alt="Harry logo" class="harry">
+    </div>
+    <div class="dropdown">
+        <button aria-label="Open Menu">Menu</button>
+        <div class="dropdown-content">
+            <a href="#" rel="noopener noreferrer" target="_blank">Opslag</a>
+            <a href="#" rel="noopener noreferrer" target="_blank">Over Ons</a>
+            <a href="#" rel="noopener noreferrer" target="_blank">Contact</a>
+        </div>
+    </div>
+</header>
+<body>
+
+    <section class="introtext">
+        <h1>de Tuin</h1>
+        <p>Welkom in de tuin van Bieb in Bloei!</p>
+    </section>
+
+    <section class="stekjes">
+        <h2>Stekjes</h2>
+        <p>Ons eerste Bieb in Bloei project is de stekjeskast gemaakt door kinderen uit de buurt bij de Maakplaats van OBA Javaplein. Twee jaar geleden brachten zij deze kast naar OBA Linnaeus waar hij sindsdien goed gebruikt wordt door buurtbewoners. Op onze stekjespagina staat een overzicht van de meest geruilde stekjes die vaak in de kast te vinden zijn. Kom vooral een kijkje nemen want soms brengen buurtbewoners heel bijzondere stekjes! Neem je eigen stekje mee van thuis om deze te ruilen. </p>
+    </section>
+
+<div class="hoofdtabel">
     <div class="buttons">
-        <button class="schaduw"></button>
-        <button class="halfschaduw"></button>
-        <button class="zon"></button>
+        <button data-target="schaduw"> <img src='assets/icons-03.png' width=40px> </button>
+        <button data-target="halfschaduw"> <img src='assets/icons-02.png' width=40px></button>
+        <button data-target="zon"> <img src='assets/icons-01.png' width=40px></button>
     </div>
 
     <div class="tables">
-            <article class="plant 1" id="1">
+            <article class="halfschaduwplant" id="1">
                 <img src="assets/plants-01.svg">
             </article>
-
-            <article class="plant 2" id="2">
+            <article class="zonplant" id="2">
                 <img src="assets/plants-02.svg">
             </article>
-
-            <article class="plant 3" id="3">
+            <article class="schaduwplant" id="3">
                 <img src="assets/plants-03.svg">
             </article>
-
-            <article class="plant 4" id="2">
+            <article class="halfschaduwplant" id="1">
                 <img src="assets/plants-04.svg">
             </article>
-
-            <article class="plant 5" id="3">
+            <article class="zonplant" id="2">
                 <img src="assets/plants-05.svg">
             </article>
-
-            <article class="plant 6" id="1">
+            <article class="schaduwplant" id="3">
                 <img src="assets/plants-06.svg">
             </article>
-
-            <article class="plant 7" id="3">
+            <article class="halfschaduwplant" id="1">
                 <img src="assets/plants-07.svg">
             </article>
-
-            <article class="plant 8" id="3">
+            <article class="zonplant" id="2">
                 <img src="assets/plants-08.svg">
             </article>
-
-            <article class="plant 9" id="1">
+            <article class="schaduwplant" id="3">
                 <img src="assets/plants-09.svg">
             </article>
-
-            <article class="plant 10" id="2">
-                <img src="assets/plants-10.svg">
-            </article>
-
-            <article class="plant 11" id="1">
-                <img src="/assets/plants-01.svg">
-            </article>
-
-            <article class="plant 12" id="2">
-                <img src="assets/plants-02.svg">
-            </article>
-
-            <article class="plant 13" id="3">
-                <img src="assets/plants-03.svg">
-            </article>
-
-            <article class="plant 14" id="2">
-                <img src="assets/plants-04.svg">
-            </article>
-
-            <article class="plant 15" id="3">
-                <img src="assets/plants-05.svg">
-            </article>
-
-            <article class="plant 16" id="1">
-                <img src="assets/plants-06.svg">
-            </article>
-
-            <article class="plant 17" id="3">
-                <img src="assets/plants-07.svg">
-            </article>
-
-            <article class="plant 18" id="3">
-                <img src="assets/plants-08.svg">
-            </article>
-
-            <article class="plant 19" id="1">
-                <img src="assets/plants-09.svg">
-            </article>
-
-            <article class="plant 20" id="2">
-                <img src="assets/plants-10.svg">
-            </article>
-
-            <article class="plant 21" id="3">
-                <img src="assets/plants-03.svg">
-            </article>
-
-            <article class="plant 22" id="2">
-                <img src="assets/plants-04.svg">
-            </article>
-
-            <article class="plant 23" id="3">
-                <img src="assets/plants-05.svg">
-            </article>
-
-            <article class="plant 24" id="1">
-                <img src="assets/plants-06.svg">
-            </article>
-
-            <article class="plant 25" id="3">
-                <img src="assets/plants-07.svg">
-            </article>
-
-            <article class="plant 26" id="3">
-                <img src="assets/plants-08.svg">
-            </article>
-
-            <article class="plant 27" id="1">
-                <img src="assets/plants-09.svg">
-            </article>
-
     </div>
+</div>
 
+<section class="zaden">
+    <h2>Zaden</h2>
+    <p>Ons derde Bieb in Bloei project is de Zadenbieb. Deze zal eind 2024 gemaakt worden door kinderen uit de buurt bij de Maakplaats in OBA Javaplein. Tijdens het Zaaifeest in maart 2025 zal er een feestelijk openingsmoment zijn om het begin van het seizoen te vieren. In deze kast kun je zaden voor je moestuin, tuin of balkon ruilen. We werken samen met groene buurtpartners in Amsterdam Oost om ervoor te zorgen dat er een breed aanbod aan verschillende zaden aanwezig blijft. </p>
+</section>
 
+<div class="hoofdtabel">
 
-    <div class="paging">
-        <button id="startBtn"> < </button>
-        <button class="paging1">1</button>
-        <button class="paging2">2</button>
-        <button class="paging3">3</button>
-        <button class="right"> > </button>
+    <div class="tables">
+            <article class="halfschaduwplant" id="1">
+                <img src="assets/plant-01.png" width="200px">
+            </article>
     </div>
+</div>
+
+<section class="geveltuin">
+    <h2>de Geveltuin</h2>
+    <p>Ons tweede Bieb in Bloei project is de geveltuin aan de voorkant van OBA Linnaeus; in 2022 aangevraagd door de inmiddels afgestudeerde Bestuurskunde student Mert. Sindsdien organiseren onze vaste studenten elk jaar in maart een Zaaifeest, om het begin van de lente te vieren met de buurt. Daarna start het Bakkie buiten de Bieb seizoen, waarin studenten elke week in de geveltuin werken onder het genot van een hapje en drankje. Woon je vlakbij en lijkt het je leuk om mee te helpen, houd dan deze website in de gaten voor de nog te bepalen dag en tijd.</p>
+</section>
+
+<section class="samenwerken">
+    <h2>Samenwerken?</h2>
+    <p> Ben jij net als ons ook zo gek van planten, biodiversiteit, natuur en gezondheid? 
+        En heb je een vraag, verzoek, opmerking, compliment of wil je je aanmelden voor een van onze workshops, events of activiteiten? Vul dan het email hieronder in:
+    </p>
+    <form>
+        <fieldset>
+          <input type="email" required>
+          <button type="submit">Verzend</button>
+        </fieldset>
+      </form>
+
+</section>
+
 
     <script src="script.js"></script> 
+</body>
+
+<footer>
+    <div class="logo">
+        <img src="assets/logo.png" width="100px" alt="logobiebinbloei">
+    </div>
+    </footer>
 </body>
 </html>
