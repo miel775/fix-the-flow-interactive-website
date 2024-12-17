@@ -154,15 +154,21 @@
     animation: schaduw 1s linear;
 } */
 
+
+
 .buttons {
     display: flex;
     justify-content: space-between;
-    justify-content: center;
-    margin: 1em;
+    gap: 1em;
+    margin: 1.2em;
 }
 
 .buttons img {
   margin: 0.2em;
+}
+
+.buttons h3 {
+  color: var(--text-color-4);
 }
 
 .schaduw {
@@ -174,29 +180,11 @@
 
 }
 
-.schaduwplant {
-  display: none;
-}
-
-.halfschaduwplant {
-  display: none;
-}
-
-.zonplant {
-  display: none;
-}
 
 .schaduwplant.active {
   display: block;
 }
 
-.halfschaduwplant.active {
-  display: block;
-}
-
-.zonplant.active {
-  display: block;
-}
 
 .halfschaduw {
     display: flex;
@@ -215,8 +203,9 @@
 
 .active {
     background-color: var(--text-color-3);
-    padding: 10px;
     border-radius: var(--radius-card);
+    padding: 10px;
+    font-family: garet heavy;
 }
 
 section {
@@ -248,6 +237,76 @@ section {
 
 .geveltuin h2 {
   color: var(--text-color-4);
+}
+ 
+.close {
+  display: flex;
+  justify-content: end;
+  background-color: var(--section-color-2);
+  padding: 1em;
+  border: solid 2px;
+  border-radius: var(--radius-card);
+}
+
+.popup1 {
+  display: none;
+}
+
+.popup1.active {
+  animation: scaling 0.3s linear;
+  transform-origin: 0% 50%;
+  display: grid;
+  position: absolute;
+  margin: 3em;
+  background-color: var(--section-color-3);
+  border-radius: var(--radius-card);
+  border: 1px #000 solid;
+  padding: 2em;
+  grid-template-columns: 30%, 1fr;
+  top: 500px;
+}
+
+.popup1 button.active {
+  scale: 1.2;
+}
+
+.popup1 button.unactive {
+  opacity:0.7;
+  scale: 0.8;
+}
+
+.halfschaduwicon:hover {
+  scale: 1.2;
+}
+
+.asia:hover {
+  scale: 1.2;
+}
+
+.popuppart2 {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 0.5em;
+  padding: 1em;
+  width: 100%;
+}
+
+.popuppart2 button {
+  background-color: var(--section-color-5);
+  color: var(--text-color-1);
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: var(--radius-card);
+}
+
+@keyframes scaling {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
 }
 
 .samenwerken {
@@ -285,12 +344,15 @@ section {
 
 footer {
   background-color: var(--section-color-2);
-  height: 30vh;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
+footer h3 {
+  color: var(--text-color-4);
+  padding-bottom: 0.5em;
 }
 
 /* media queries */
@@ -301,7 +363,19 @@ footer {
   
     .harry {
       position: absolute;
-      left: 2%;
+      right: 8%;
+    }
+
+    .adres {
+      display: none;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    h1 {
+      font-size: 4em;
     }
     
 }
@@ -319,6 +393,10 @@ footer {
     }
     .table-of-content-mobile :nth-of-type(9) {
       display:none;
+    }
+
+    .nav-links a:nth-of-type(2) {
+      margin-top: -0.6em;
     }
   }
 
