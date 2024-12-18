@@ -1,6 +1,3 @@
-
-Ontwerp en maak een interactieve website voor een opdrachtgever.
-
 ![The ARTicle!](https://github.com/user-attachments/assets/dc585a6e-5401-498b-93fd-f5a5269fb74b)
 
 # Titel
