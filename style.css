@@ -238,26 +238,37 @@ section {
 .geveltuin h2 {
   color: var(--text-color-4);
 }
- 
+
+.titletext {
+  display: flex;
+  justify-content: start;
+}
+
 .close {
   display: flex;
   justify-content: end;
-  background-color: var(--section-color-2);
-  padding: 1em;
-  border: solid 2px;
-  border-radius: var(--radius-card);
+  top: 1em;
+}
+
+
+.textelement article {
+  display: none;
+}
+
+.textelement article.visible {
+  display: block;
 }
 
 .popup1 {
   display: none;
 }
 
+
 .popup1.active {
   animation: scaling 0.3s linear;
   transform-origin: 0% 50%;
-  display: grid;
+  display: block;
   position: absolute;
-  margin: 3em;
   background-color: var(--section-color-3);
   border-radius: var(--radius-card);
   border: 1px #000 solid;
@@ -284,8 +295,8 @@ section {
 }
 
 .popuppart2 {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  display: flex;
+  justify-content: start;
   gap: 0.5em;
   padding: 1em;
   width: 100%;
@@ -298,6 +309,15 @@ section {
   height: 3.5em;
   border-radius: var(--radius-card);
 }
+
+.Hpl {
+  display: none;
+}
+
+.ZOazie {
+  display: none;
+}
+
 
 @keyframes scaling {
   0% {
@@ -377,7 +397,10 @@ footer h3 {
     h1 {
       font-size: 4em;
     }
-    
+
+    .tables article:nth-of-type(10) {
+      display:none;
+    } 
 }
 
 
@@ -391,13 +414,21 @@ footer h3 {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 10px;
     }
-    .table-of-content-mobile :nth-of-type(9) {
-      display:none;
-    }
 
     .nav-links a:nth-of-type(2) {
       margin-top: -0.6em;
     }
+
+    .tables {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .popuppart1 {
+      display: grid;
+      grid-template-columns: 1fr 70%;
+    }
+
   }
 
   .harry {
@@ -405,7 +436,12 @@ footer h3 {
     animation: bouncing 2s linear;
   }
 
-  @keyframes bouncing {
+
+
+
+/* keyframes */
+
+@keyframes bouncing {
     0% {
         position: 0;
     }
