@@ -44,11 +44,13 @@ buttons.forEach(button => {
 // normaal wordt de eerste article getoond
 showArticle(1);
 
+
+let Samenwerkenveld = document.querySelector('.samenwerken input');
+// Er wordt een input geslecteerd wordt
+   Samenwerkenveld.addEventListener('invalid', function(ev) {
+      // Er wordt een event gecreërd op de queryselector
+      Samenwerkenveld.setCustomValidity('Er moet een email ingevuld worden');
+      // De tekst wordt veranderd naar X
+});
    
 
-
-
-// in de popup
-// let popupbutton1 = document.querySelector('.beschrijving1')
-// let voeding1 = document.querySelector('.beschrijving1')
-// let temperatuur1 = document.querySelector('.temperatuur1')
